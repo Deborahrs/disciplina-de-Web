@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="orbio, 
+                                   controle biológico, 
+                                   agricultura de precisão,
+                                   drones,
+                                   vants,
+                                   planejamento de rotas,
+                                   agricultura 4.0,
+                                   embrapa,
+                                   birdview" />
+    <meta name="description" content="ORBIO Controle Biológico - 
+                                      Planejamento de Missões Inteligentes 
+                                      com Drones para Agricultura de Precisão" />
+    <meta name="author" content="Embrapa & Birdview" />
+
+    <link href="css/estilo.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" />
+    <link rel="stylesheet" href="photoswipe/dist/photoswipe.css">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+
+    <script src="js/lib.js"></script>
+    <script src="photoswipe/dist/umd/photoswipe.umd.min.js"></script>
+    <script src="photoswipe/dist/umd/photoswipe-lightbox.umd.min.js"></script>
+    <script src='js/jquery-1.8.1.min.js' type='text/javascript'></script>
+    <script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+    <title>ORBIO Controle Biológico</title>
+</head>
+
+<body>
+    <header>
+        <div id="gradiente">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#sw">Software</a></li>
+                    <li><a href="#hw">Hardware</a></li>
+                    <li><a href="#equipe">Equipe</a></li>
+                    <li><a href="#publicacoes">Publicações</a></li>
+                </ul>
+            </nav>
+            <a href="https://www.birdview.com.br/"><img src="img/logo_birdview_drone_bio_control (1).png"
+                    alt="Marca da Embrapa" width="240"></a>
+            <h2>Controle Biológico</h2>
+            <h1>ORBIO</h1>
+            <h2>Planejamento de Missões Inteligentes com Drones para Agricultura de Precisão</h2>
+        </div>
+    </header>
+    <main>
+        <section id="sobre">
+            <h1>ORBIO Controle Biológico</h1>
+            <div id="conteudo_sobre">
+                <div>
+                    <iframe id="yt" width="560" height="315" src="https://www.youtube.com/embed/DWsPhE_rRSk"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div>
+                    <p>
+                        O Otimizador de Rotas para Controle Biológico (ORBIO) é um software desenvolvido para o
+                        planejamento de missões de cobertura aérea utilizando
+                        Veículos Aéreos Não Tripulados (VANT). Através de uma interface intuitiva e amigável, é possível
+                        definir uma área de cobertura a partir do desenho de
+                        um polígono com alguns cliques em um mapa. Logo após a definição da área de cobertura, pode-se
+                        selecionar um dos vértices do polígono,
+                        também a partir de um clique, para a definição do ponto de decolagem e aterrisagem, assim como
+                        para a geração automatizada da rota de cobertura.
+                        A rota de cobertura consiste em movimentos de vai-e-volta alinhados com a maior aresta do
+                        polígono, o que garante melhor desempenho na execução do
+                        voo planejado em termos de tempo.
+                    </p>
+                    <p>
+                        O software também possui uma interface de configuração com alguns parâmetros, tais como
+                        altitude, velocidade e distância entre linhas.
+                        Estes parâmetros de configuração podem ser alterados antes ou depois da geração da rota de
+                        cobertura. Se forem modificados depois, a rota
+                        de cobertura será recalculada e renderizada novamente sobre o mapa para a visualização do
+                        usuário. Com a definição da rota de cobertura,
+                        é possível salvar um arquivo de waypoints em um formato compatível com a maioria das
+                        controladoras de voo do mercado. Este arquivo
+                        já está pronto para o voo, contendo todas as informações e comandos específicos para a
+                        realização de um voo pré-programado.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sw">
+            <div id="conteudo_sw">
+                <div>
+                    <h1 style="color: #fff;">Planejamento de Missão</h1>
+                    <p>A tela inicial da aplicação apresenta ao usuário o mapa de satélite localizado em uma região da
+                        cidade de Brasília/DF.
+                        Na parte superior/central da tela, encontra-se a mensagem “Desenhe um polígono” com algumas
+                        informações contendo valores iniciais nulos,
+                        tais como tamanho da área (0 ha), comprimento total da rota de cobertura (0 km) e tempo de voo
+                        estimado para cobrir a área (0 s).
+                    </p>
+                    <p>
+                        No canto superior/direito, observa-se um campo de busca que pode ser utilizado para selecionar
+                        uma localidade específica para redirecionar o mapa.
+                        Ao digitar e selecionar o nome de uma determinada localidade, o mapa será recarregado no novo
+                        local indicado.
+                        Logo abaixo do campo de busca, encontram-se alguns botões de controle, tais como aumento (+) e
+                        redução (-) de zoom do mapa.
+                        Também estão disponíveis os botões de desenho do polígono e uma lixeira para excluir partes do
+                        polígono.
+                        O botão de desenho do polígono já está pré-selecionado e pronto para uso, permitindo ao usuário
+                        desenhar o polígono que
+                        representa a área a ser coberta através de cliques direto na interface do mapa.
+                        Uma vez que o polígono está desenhado com diversos vértices, é possível selecionar um dos
+                        vértices e clicar na lixeira para excluí-lo,
+                        alterando assim a área inicialmente desenhada.
+                    </p>
+                    <!--<a href="https://www.birdview.com.br/">+ Birdview</a>-->
+                </div>
+                <img src="img/sw.png" alt="Orbio Controle Biológico">
+            </div>
+        </section>
+
+        <section id="hw">
+            <h1>Protótipo do SaaS</h1>
+            <p>
+                Uma plataforma de gestão de voos que combina um módulo de gestão com um algoritmo inteligente de geração
+                de rotas em um ambiente Multi-Tenancy.
+                Projetado para ser intuitivo e responsivo, o software facilita o gerenciamento de perfis variados de
+                usuários — incluindo administradores, gerentes, pilotos e clientes — bem como de recursos, ordens de
+                serviço, planos de voo, equipamentos, relatórios e incidentes.
+
+                <br><br>Para acessar a versão demonstrativa (<i>Login</i>) <a href="http://45.55.64.248/login"
+                    target="_blank"> clique aqui</a>.
+                <br>Utilize as credenciais de acesso de cada usuário: <a
+                    href="https://orbio.gitbook.io/orbio-docs/">clique aqui</a>.
+            </p>
+        </section>
+
+        <section id="equipe">
+            <h1>Equipe do Projeto</h1>
+            <p>O projeto é uma parceria de pesquisa entre a Embrapa Instrumentação de São Carlos/SP e a empresa
+                Birdview. A equipe do projeto é formada pelo pesquisador da Embrapa na área de
+                Agricultura de Precisão, pelos sócios da empresa com ampla experiência na área de Controle Biológico e
+                por pesquisadores da área de Computação com experiência no
+                desenvolvimento de soluções tecnológicas relacionadas a drones. Confira a seguir o perfil da equipe do
+                projeto:
+            </p>
+            <div class="membro">
+                <img src="img/lucio.jpg" id="lucio" class="membro_img" alt="Lúcio André de Castro Jorge">
+                <img src="img/ricardo.jpg" id="ricardo" class="membro_img" alt="Ricardo Machado">
+                <img src="img/nick.jpg" id="nick" class="membro_img" alt="Nicholas Matias">
+                <img src="img/olivieri.gif" id="olivieri" class="membro_img" alt="Bruno Olivieri de Souza">
+                <img src="img/taua.jpg" id="taua" class="membro_img" alt="Tauã Milech Cabreira">
+                <img src="img/siqueira.jpg" id="siqueira" class="membro_img" alt="Bruno Siqueira da Silva">
+                <img src="img/marcelo.gif" id="marcelo" class="membro_img" alt="Marcelo de Souza Moreira">
+            </div>
+
+            <div class="info">
+                <p class="nome">Lúcio André de Castro Jorge</p>
+                <p>Graduação em Engenharia Elétrica - Eletrônica e Eletrotécnica na Faculdade de Engenharia de Barretos
+                    (1987); Mestrado em Matemática Computacional e Ciência da Computação pelo Instituto de Ciências
+                    Matemáticas e de Computação da Universidade de São Paulo, ICMC-USP (2001); Doutorado em
+                    Processamento de Sinais e Instrumentação pela Escola de Engenharia da Universidade de São Paulo,
+                    SEL-EESC-USP (2011); Especialização LatoSensu em Processamento de imagens pela Universidade de
+                    Campinas - UNICAMP (1990); Especialização LatoSensu em Geoprocessamento pela Universidade Federal de
+                    São Carlos - UFSCar (2005); Pesquisador na Embrapa Instrumentação desde 1990; Professor na
+                    Universidade Mayor do Chile desde 2012 Tem experiência no desenvolvimento de softwares de
+                    processamento de imagens, reconhecimento de padrões e inteligência artificial, Computação Gráfica e
+                    sistemass georeferenciados. Experência em diversos projetos aplicados na Agricultura, Agricultura de
+                    Precisão, Geoprocessamento, Monitoramento agrícola, sensoriamento remoto, estudo de raízes, folhas,
+                    doenças e deficiencias de plantas, desenvolvimento de VANT (veículo aéreo não tripulado) ou drones
+                    para uso agrícola, Possui patentes e produtos transferidos.</p>
+            </div>
+
+            <div class="info">
+                <p class="nome">Ricardo Machado</p>
+                <p>Sócio-proprietário da empresa Birdview, especialista em soluções inteligentes para
+                    controle biológico.</p>
+            </div>
+
+            <div class="info">
+                <p class="nome">Nicholas Rodwell Matias</p>
+                <p>Possui graduação em Modelmaking for Design and Media pela Arts University Bournemouth(2005).
+                    Sócio-proprietário da empresa Birdview, especialista em soluções inteligentes para
+                    controle biológico.
+                </p>
+            </div>
+
+            <div class="info">
+                <p class="nome">Bruno José Olivieri de Souza</p>
+                <p>Doutorado pela PUC-Rio (Capes 7), possui o título de mestre pela PUC-Rio(Capes 7) e possui graduação
+                    em Ciência da Computação pela Universidade Federal Fluminense (2003), pós-graduação em Gestão de
+                    Projetos (ISG Portugal 2006), MBA em Administração de Empresas (COPPEAD/UFRJ 2007) e diversos
+                    treinamentos no exterior. Experiência no meio privado em gestão e atuação de mais de quinze anos em
+                    Redes e Segurança da Informação. No meio acadêmico possui experiência na área de Ciência da
+                    Computação, com ênfase em Redes, Sistemas Distribuídos e Sistemas Operacionais. Atualmente pesquisa,
+                    além de diversos aspectos relacionados em Sistemas Distribídos, coordenação distribuída de múltiplos
+                    Veículos Aéreos Não Tripulados (VANTs/Drones). Entusiasta e prototipador de robótica e IoT.</p>
+            </div>
+
+            <div class="info">
+                <p class="nome">Tauã Milech Cabreira</p>
+                <p>Professor do Instituto Federal de Educação, Ciência e Tecnologia Sul-rio-grandense (IFSul - Campus
+                    Pelotas) desde 2012. Coordenador do Curso de Licenciatura em Computação. Possui Doutorado em Ciência
+                    da Computação pela UFPel - Universidade Federal de Pelotas (2019) e Mestrado em Modelagem
+                    Computacional pela FURG - Universidade Federal do Rio Grande (2013). Participou do Programa de
+                    Doutorado Sanduíche no Exterior (PDSE) no Real-Time Systems Lab (ReTiS Lab), Scuola Superiore
+                    Sant'Anna - Pisa, Itália (2017) como bolsista CAPES. Atualmente é membro do Grupo de Pesquisa em
+                    Engenharia de Sistemas Ciber-Físicos (Cyphy Lab) e desenvolve pesquisas relacionadas a Veículos
+                    Aéreos Não Tripulados nas áreas de Planejamento de Caminhos de Cobertura e Missões com Preocupação
+                    Energética. Também desenvolve pesquisas relacionadas às áreas de Robótica Educacional e Computação
+                    Desplugada. Leciona disciplinas nas áreas de Algoritmos e Lógica de Programação, Programação
+                    Front-end e Back-end, Publicou diversos trabalhos completos em anais de eventos e artigos em
+                    periódicos, com destaque para publicações no IEEE Robotics and Automation Letters (RA-L) e Journal
+                    of Intelligent & Robotics Systems (JINT). Sua tese intitulada "Energy-aware Coverage Path Planning
+                    for Unmanned Aerial Vehicles" foi premiada com o 3º lugar no "Contest of Thesis and Dissertations in
+                    Robotics (CTDR 2020)", realizado durante o IEEE Latin American Robotics Symposium (LARS 2020).</p>
+            </div>
+
+            <div class="info">
+                <p class="nome">Bruno Siqueira da Silva</p>
+                <p>Atualmente, é Doutorando em Computação pela UFPel. É graduado em Licenciatura em Matemática pela
+                    URCAMP (2010), bacharel
+                    em Sistemas de Informação pela URI Santo ngelo (2012) e Mestre em Integrado Engenharia Informática e
+                    Computadores pela
+                    Faculdade de Engenharia da Universidade do Porto - FEUP (2013) e Mestre em Ensino Científico
+                    Tecnológico pela URI Santo
+                    Ângelo (2016). É Professor Efetivo do Instituto Federal Farroupilha (IFFAR) campus São Borja/RS
+                    desde
+                    2013, onde atua nos cursos Técnico em Informática, Bacharelado em Sistemas de Informação,
+                    Licenciatura em Matemática e
+                    cursos de Pós-Graduação. No IFFAR, é o Presidente da Incubadora de Base Tecnológica (2021-Atual) e
+                    Coordenador do
+                    Laboratório Maker (2022-Atual). Também exerce dupla função no Programa INOVA.RS da Secretaria de
+                    Inovação, Ciência e
+                    Tecnologia do Estado do RS (SICT/RS), como Membro do Conselho Consultivo (2023-Atual) e Coordenador
+                    Técnico (2020-Atual)
+                    com ações voltadas para a Região da Fronteira Oeste e Campanha. Como pesquisador (desde 2013), atua
+                    na área de
+                    Computação/Programação de Computadores, Projetos de Software, Robótica, Empreendedorismo e Inovação.
+                    Coordena e promove
+                    o Desafio de Empreendedorismo e Inovação do IFFAR (Bye Bye Boss) desde 2018, onde realiza a
+                    prospecção e mentoria de
+                    ideias de negócios desenvolvidas por estudantes, buscando o aceite no Programa de Incubação de
+                    Empresas do IFFAR. A
+                    mesma atuação o projeto de extensão universitária chamado "Projetos inovadores e empreendedores:
+                    transformando sua ideia
+                    em um negócio", pelo segundo ano consecutivo, vem promovendo a criação de startups no âmbito
+                    universitário.
+                    Recentemente, atuou como mentor da Olimpíada de Inovação do Agronegócio, promovida pelo Instituto
+                    Federal do Rio de
+                    Janeiro, Ministério de Ciência e Tecnologia e Inovação e CNPq.</p>
+            </div>
+
+            <div class="info">
+                <p class="nome">Marcelo de Souza Moreira</p>
+                <p>Atualmente curso Licenciatura em Computação, no IFSul, e estudo, por vias externas, com a finalidade
+                    de desenvolver uma especialização na área de desenvolvimento de sistemas Web, e, enfatizando de
+                    antemão, com maior foco no back-end. Pois bem: dei inicio à trajetória dos meus estudos, que pode
+                    ser conferida no meu perfil do Github, cujo link de acesso disponibilizarei na última linha,
+                    começando pelo front-end das aplicações, utilizando as tecnologias HTML5, CSS3 e JavaScript,
+                    acompanhada da biblioteca Jquery. Em seguida, tendo aprendido o que me parecia ser o necessário para
+                    prosseguir naqueles primeiros meses, voltei minha atenção para o desenvolvimento back-end, fazendo
+                    uso da linguagem PHP, e do banco de dados MySQL. Neste segmento me percebi investindo um tempo maior
+                    do que no anterior, e assim, de fato, sigo, até o atual momento, o estudando, mas, agora com o
+                    decidido intuito de me especializar. Somado ao que poderia caracterizar, então, como uma "inclinação
+                    para o back-end", recentemente, há cerca de dois meses, comecei um estágio nesta mesma área, na
+                    escola Mario Quintana. Como estagiário, e sendo supervisionado, programo, utilizando a linguagem
+                    PHP, segmentos de um sistema de requisições e cadastros que a instituição faz uso. Por fim, segue
+                    abaixo deste parágrafo o link de acesso para o meu perfil no Github, onde podem ser encontrados,
+                    como disse, tudo aquilo que fiz e estudei até o momento presente, desde programas, testes e muitos
+                    documentos escritos, até aplicações em que tento reunir, mais solidamente, aquilo que aprendi.
+                    https://github.com/marcelosmbrr</p>
+            </div>
+        </section>
+
+        <section id="publicacoes">
+            <h1>Publicações em Congressos e Revistas Científicas</h1>
+            <p>A pesquisa desenvolvida está sendo divulgada por meio publicações científicas em congresos e
+                revistas da área de Computação e relacionadas à temática da Agricultura. A primeira versão do
+                software de planejamento de missões inteligente produzida pela equipe de desenvolvimento está em
+                processo de registro de software no Instituto Nacional da Propriedade Intelectual (INPI). Um artigo
+                sobre o ORBIO foi publicado e apresentado no XIX Latin American Robotics Symposium (LARS 2022)
+                e um capítulo para o livro da Embrapa está em processo de editoração. A seguir, encontram-se os links
+                de acesso às publicações e registros:
+            </p>
+            <div class="grupo_publi">
+                <div class="publi">
+                    <a href="https://ieeexplore.ieee.org/document/9995875" target="_blank">
+                        <div><img src="img/ieee.png" alt="IEEE"></div>
+                        <span>XIX Latin American Robotics Symposium (LARS 2022)</span>
+                    </a>
+                </div>
+                <div class="publi">
+                    <a href="#" target="_blank">
+                        <div><img src="img/embrapa.png" alt="Embrapa"></div>
+                        <span>Capítulo do Livro da Embrapa</span>
+                    </a>
+                </div>
+                <div class="publi">
+                    <a href="#" target="_blank">
+                        <div><img src="img/inpi.png" alt="INPI"></div>
+                        <span>Registro de Software (INPI)</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="logos">
+            <a href="https://www.embrapa.br/instrumentacao"><img src="img/marca-embrapa-branco.png"
+                    alt="Logo da Embrapa"></a>
+            <a href="https://birdview.com.br/"><img src="img/bv2.png" alt="Logo da Birdview"></a>
+        </div>
+        <div class="menu_rodape">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#sw">Software</a></li>
+                    <li><a href="#hw">Hardware</a></li>
+                    <li><a href="#equipe">Equipe</a></li>
+                    <li><a href="#publicacoes">Publicações</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="contato">
+            <a href="mailto:contato@birdview.com.br">contato@orbio.com.br</a>
+        </div>
+    </footer>
+    <div class="pos_footer">ORBIO Controle Biológico 2024 - Todos os direitos reservados</div>
+</body>
+
+</html>
+<script>
+    var lightbox = new PhotoSwipeLightbox({
+        gallery: '#gallery--getting-started',
+        children: 'a',
+        // dynamic import is not supported in UMD version
+        pswpModule: PhotoSwipe
+    });
+    lightbox.init();
+</script>
